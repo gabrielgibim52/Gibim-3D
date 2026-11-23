@@ -5,7 +5,7 @@ import * as THREE from "three";
 import { Environment, Lightformer, ContactShadows } from "@react-three/drei";
 
 /** Iluminação de estúdio gerada localmente (sem baixar HDRs externos). */
-export function StudioEnvironment({ accent = "#ff5a1f" }: { accent?: string }) {
+export function StudioEnvironment({ accent = "#ef8c21" }: { accent?: string }) {
   return (
     <Environment resolution={256} frames={1}>
       <Lightformer intensity={2.2} position={[0, 4, -2]} scale={[8, 4, 1]} />

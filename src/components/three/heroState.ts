@@ -10,4 +10,4 @@ export const heroState = {
   pointerY: 0,
 };
 
-export const HERO_COLORS = ["#ff5a1f", "#1f6075", "#8fae8b", "#e9a7a1", "#ecebe6"];
+export const HERO_COLORS = ["#ffed00", "#ef8c21", "#1f6075", "#8fae8b", "#ffffff"];

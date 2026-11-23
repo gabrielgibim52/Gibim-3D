@@ -49,14 +49,14 @@ export type Product = {
 };
 
 export const FILAMENTS: Filament[] = [
-  { id: "laranja-gibim", name: "Laranja Gibim", hex: "#ff5a1f" },
+  { id: "amarelo-gibim", name: "Amarelo Gibim", hex: "#ffed00" },
+  { id: "laranja-gibim", name: "Laranja Gibim", hex: "#ef8c21" },
   { id: "grafite", name: "Grafite", hex: "#33353b" },
   { id: "branco-gelo", name: "Branco Gelo", hex: "#ecebe6" },
   { id: "azul-petroleo", name: "Azul Petróleo", hex: "#1f6075" },
   { id: "verde-salvia", name: "Verde Sálvia", hex: "#8fae8b" },
   { id: "rosa-quartzo", name: "Rosa Quartzo", hex: "#e9a7a1" },
   { id: "lilas", name: "Lilás", hex: "#9d8ee0" },
-  { id: "dourado", name: "Dourado", hex: "#d0a63a" },
 ];
 
 export const MATERIALS: Material[] = [
@@ -142,7 +142,7 @@ export const PRODUCTS: Product[] = [
     dimensions: [7, 2.2, 0.6],
     printHours: 1,
     allowText: { label: "Texto do chaveiro", maxLength: 10, default: "GIBIM" },
-    allowSecondaryColor: { label: "Cor do texto", default: "laranja-gibim" },
+    allowSecondaryColor: { label: "Cor do texto", default: "amarelo-gibim" },
   },
   {
     slug: "suporte-celular",
@@ -165,7 +165,7 @@ export const PRODUCTS: Product[] = [
       "Sete células hexagonais em alturas diferentes para canetas, pincéis e ferramentas. Fica lindo na mesa de trabalho.",
     basePrice: 89.9,
     model: "colmeia",
-    defaultColor: "dourado",
+    defaultColor: "amarelo-gibim",
     defaultMaterial: "pla-silk",
     dimensions: [16, 10, 15],
     printHours: 8,

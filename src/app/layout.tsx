@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource-variable/space-grotesk";
-import "@fontsource-variable/inter";
+import "@fontsource-variable/montserrat";
+import "@fontsource/lilita-one";
 import "lenis/dist/lenis.css";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b0b0d",
+  themeColor: "#101215",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

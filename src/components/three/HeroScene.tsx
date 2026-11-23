@@ -100,8 +100,8 @@ function PrintingVase() {
         <meshPhysicalMaterial
           ref={material}
           color={HERO_COLORS[0]}
-          roughness={0.32}
-          metalness={0.45}
+          roughness={0.42}
+          metalness={0.12}
           clearcoat={0.6}
           clearcoatRoughness={0.25}
           bumpMap={bump}
@@ -113,7 +113,7 @@ function PrintingVase() {
       {/* anel brilhante na camada sendo impressa */}
       <mesh ref={edge} rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[0.05, 0.0007, 8, 128]} />
-        <meshBasicMaterial color="#ffd2a8" toneMapped={false} />
+        <meshBasicMaterial color="#fff59a" toneMapped={false} />
       </mesh>
       {/* bico da impressora */}
       <group ref={nozzle}>
@@ -125,7 +125,7 @@ function PrintingVase() {
           <boxGeometry args={[0.02, 0.018, 0.02]} />
           <meshStandardMaterial color="#202227" metalness={0.6} roughness={0.4} />
         </mesh>
-        <pointLight color="#ff8a4a" intensity={0.15} distance={0.15} />
+        <pointLight color="#ef8c21" intensity={0.15} distance={0.15} />
       </group>
     </group>
     </>

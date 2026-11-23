@@ -20,7 +20,7 @@ const STEPS = [
   { title: "Impressão", text: "O bico derrete o filamento a 210 °C e desenha camada por camada." },
   { title: "Acabamento", text: "Conferimos, limpamos e embalamos à mão antes de enviar." },
 ];
-const COLOR_NAMES = ["Laranja Gibim", "Azul Petróleo", "Verde Sálvia", "Rosa Quartzo", "Branco Gelo"];
+const COLOR_NAMES = ["Amarelo Gibim", "Laranja Gibim", "Azul Petróleo", "Verde Sálvia", "Branco"];
 
 export function HomeExperience() {
   const root = useRef<HTMLDivElement>(null);
@@ -107,7 +107,7 @@ export function HomeExperience() {
               {"Objetos que nascem camada por camada.".split(" ").map((w, i) => (
                 <span key={i}>
                   <span className="word-mask">
-                    <span className="word">{w}</span>
+                    <span className={`word ${i >= 3 ? "word-hl" : ""}`}>{w}</span>
                   </span>{" "}
                 </span>
               ))}
